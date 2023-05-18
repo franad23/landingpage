@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.lightThemeBody {
+    background-color: rgb(248, 243, 232);
+}
+.darkThemeBody {
+    background-color: #25232F;
+}
+
+.darkThemeBtn {
+    background: rgb(253,47,92);
+    background: linear-gradient(54deg, #fd2f5c 0%, #fe8c01 100%);
+} 
+
+.lightThemeBtn {
+
+    /* background-color: #96ACF9; */
+    /* background: rgb(253,47,92);
+    background: linear-gradient(54deg, #fd2f5c 0%, #fe8c01 100%); */
+    background: rgb(150,172,249);
+    background: linear-gradient(54deg, #96acf9 0%, #FDE74C 100%);
+    color: white;
+
+}
+.themeModeContainer {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+.themeModeBtn {
+    border: none;
+    border-radius: 100%;
+    padding: 10px;
+
+}
+.sunBlack {
+    display: none;
+}
+.sunWhite {
+    display: none;
+}
+.moonWhite {
+    display: none;
+}
+.tmbDark:hover {
+    background-color:  #25232f;
+    transition: 1.5s;
+}
+.tmbDark:hover .moonBlack{
+    display: none;
+}
+.tmbDark:hover .moonWhite{
+    display: block;
+}
+
+.tmbLight:hover {
+    background: rgb(150,172,249);
+    background: linear-gradient(54deg, rgba(150,172,249,1) 0%, #25232f 100%);
+}
+.btnPlay{   
+    height: 15%;
+    width: 50%;
+    min-width: 300px;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Ubuntu Mono', monospace;
+    font-weight:700;
+    font-size:xx-large;
+}
+.btnPlay:active {
+    transform: translate(-5px, 5px);
+}
